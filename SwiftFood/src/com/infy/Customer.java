@@ -6,6 +6,17 @@ public class Customer {
 	public long contactNumber;
 	public String address;
 	
+	public Customer( ) {
+		
+	}
+	
+	public Customer(String customerName, long contactNumber, String address){
+		this.customerName = customerName;
+		this.contactNumber = contactNumber;
+		this.address = address;
+		
+	}
+	
 	public void displayCustomerDetails() {
 		System.out.println("Displaying customer details \n***********");
 		System.out.println("Customer Id : " + customerId);

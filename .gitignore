@@ -1,17 +1,13 @@
-# Compiled
-*.elc
+# Eclipse
+.metadata/
+.settings/
+.project
+.classpath
 
-# Packaging
-.cask/
-.eask/
-.eldev/
-.keg/
+# Build
+bin/
+target/
 
-# Built distribution
-dist/
-
-# Backup files
-*~
-
-# Undo-tree save-files
-*.~undo-tree
+# Temp
+*.log
+*.tmp

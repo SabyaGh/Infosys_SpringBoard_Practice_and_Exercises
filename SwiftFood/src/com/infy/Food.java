@@ -1,11 +1,46 @@
 package com.infy;
 
 public class Food {
-	public String foodName;
-	public String cuisine;
-	public String foodType;
-	public int quantityAvailable;
-	public double unitPrice;
+	private String foodName;
+	private String cuisine;
+	private String foodType;
+	private int quantityAvailable;
+	private double unitPrice;
+	
+	public String getFoodName() {
+		return foodName;
+	}
+	public void setFoodName(String foodName) {
+		this.foodName = foodName;
+	}
+	
+	public String getFoodType() {
+		return foodType;
+	}
+	public void setFoodType(String foodType) {
+		this.foodType = foodType;
+	}
+	
+	public String getCuisine() {
+		return cuisine;
+	}
+	public void setCuisine(String cuisine) {
+		this.cuisine = cuisine;
+	}
+	
+	public int getAvailableQuantity() {
+		return quantityAvailable;
+	}
+	public void setAvailableQuantity(int quantityAvailable) {
+		this.quantityAvailable = quantityAvailable;
+	}
+	
+	public double getUnitPrice() {
+		return unitPrice;
+	}
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
+	}
 	
 	public void displayFoodDetails() {
 		System.out.println("Displaying Food Details \n***********");

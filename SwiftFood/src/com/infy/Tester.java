@@ -41,8 +41,8 @@ public class Tester {
 //				System.out.println("Status of order 2: "+order2.status);
 //				System.out.println("Id od order 2: "+order2.orderId);
 //				System.out.println("Items ordered in order 2: "+order2.orderedFoods);
-				
-				Restaurant restaurant = new Restaurant("McDonald's",9988676767l,"SH1109, Caroline Street, Springfield",4.1f);
+				long[] restaurantContacts = {9946251306l,6623162904l,7654331896l};
+				Restaurant restaurant = new Restaurant("McDonald's",restaurantContacts,"SH1109, Caroline Street, Springfield",4.1f);
 				restaurant.displayRestaurantDetails();
 				
 		}

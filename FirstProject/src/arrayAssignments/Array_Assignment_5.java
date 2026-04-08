@@ -1,0 +1,45 @@
+package arrayAssignments;
+
+public class Array_Assignment_5 {
+	public static int[] findNumbers(int num1, int num2) {
+		int[] numbers = new int[6];
+		int sumOfDigits = 0;
+		int counter = 0;
+		if(num1<num2) {
+			for(int i = num1; i<= num2; i++) {
+				int Number = i;
+				if(Number>=10&&Number<=99) {
+					sumOfDigits = (Number/10)+(Number%10);
+					if(sumOfDigits %3==0) {
+						if(Number%5 == 0) {
+							numbers[counter]= Number;
+							counter++;
+						}
+					}
+				}
+			}
+		}
+		
+
+		return numbers;
+	}
+
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 30;
+
+		int[] numbers = findNumbers(num1, num2);
+		if (numbers[0] == 0) {
+			System.out.println("There is no such number!");
+		} else {
+			for (int index = 0; index <= numbers.length - 1; index++) {
+				if (numbers[index] == 0) {
+					break;
+				}
+				System.out.println(numbers[index]);
+			}
+		}
+
+	}
+
+}
